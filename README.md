@@ -11,16 +11,78 @@ Background: Railway stations are complex environments with numerous facilities a
 Ministry of Railway
 
 ## Idea
-
+Create a Smart Navigation System for railway stations using 3D maps and indoor positioning. The system will use mobile phones and smart kiosks to guide users to ticket counters, platforms, restrooms, etc., in real time. It will also support voice commands and text-to-speech for visually impaired users.
 
 ## Proposed Solution / Architecture Diagram
+High-Level Architecture:
+
+Frontend:
+
+Mobile App (Android/iOS)
+
+Digital Kiosk UI
+
+Backend:
+
+Real-time Location Tracking System (e.g., Bluetooth Beacons / Wi-Fi-based)
+
+Station Layout Database
+
+Navigation API
+
+Accessibility Feature Module
+
+Integration Layer for Indian Railways APIs
+
+Cloud Infrastructure:
+
+Server Hosting (e.g., AWS, Azure)
+
+Real-time Database (e.g., Firebase, MongoDB)
+
+(You can include a diagram showing how data flows between app, server, and beacons)
+
+![Screenshot 2025-05-20 111034](https://github.com/user-attachments/assets/aea88e15-15be-4706-af1c-9112aa44ef3b)
+
+![Screenshot 2025-05-20 111440](https://github.com/user-attachments/assets/204913d3-d9ff-4b33-b3e5-d0c4c7bd8655)
+
 
 
 ## Use Cases
+Passenger finds nearest restroom using mobile app
+
+Visually impaired person receives voice-guided navigation to platform
+
+User at kiosk searches for "Food Court" and gets directions
+
+Station staff updates layout — changes reflected instantly in app
+
+App shows platform location and walking time from current location
 
 
 ## Technology Stack
+Frontend: Flutter / React Native (for cross-platform mobile app)
 
+Backend: Node.js / Python Flask
+
+Database: Firebase / MongoDB
+
+Mapping: Mapbox / OpenStreetMap with custom 3D mapping
+
+Navigation: Indoor Positioning (Bluetooth beacons or Wi-Fi RTT)
+
+Accessibility: Text-to-speech (TTS), voice recognition (Google Voice API)
+
+Deployment: AWS / Azure
 
 ## Dependencies
+Real-time location tracking system (BLE/Wi-Fi hardware in stations)
+
+Station layout data from railway authorities
+
+Integration with Indian Railways APIs (PNR, Train Schedule, etc.)
+
+Speech-to-text and text-to-speech APIs
+
+Stable internet access in stations
 
